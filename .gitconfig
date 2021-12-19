@@ -1,0 +1,7 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Igor Gomes Lemes
+	email = 51129898+Lemesigor@users.noreply.github.com
+
+[init]
+	defaultBranch = main
