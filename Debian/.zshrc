@@ -1,6 +1,9 @@
+alias python=python3
+alias pip=pip3
+alias vi=vim
+DEFAULT_USER="$(whoami)"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-DEFAULT_USER="$(whoami)"
 # Path to your oh-my-zsh installation.
 export ZSH="/home/ilemes/.oh-my-zsh"
 
@@ -70,7 +73,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker node python zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git z docker node python zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
