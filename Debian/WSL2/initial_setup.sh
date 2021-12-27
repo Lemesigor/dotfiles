@@ -41,7 +41,7 @@ sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CU
 
  rm -rf ~/.zshrc &&
 
-git clone https://github.com/Lemesigor/dotfiles.git ~/.dotfiles &&
+git clone git@github.com:Lemesigor/dotfiles.git ~/.dotfiles &&
 cd ~/.dotfiles &&
 ln -s ~/.dotfiles/Debian/.zshrc ~/.zshrc &&
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig &&
