@@ -27,6 +27,10 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io -y &&
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose &&
 sudo chmod +x /usr/local/bin/docker-compose &&
 
+## Workaround to have docker running at reboot and daemon running correctly
+sudo touch /etc/fstab &&
+echo "update-alternatives --set iptables /usr/sbin/iptables-legacy\nupdate-alternatives --set ip6tables /usr/sbin/ip6tables-legacy" | sudo tee /etc/fstab &&
+echo 'ilemes ALL=(ALL) NOPASSWD: /usr/bin/dockerd' | sudo EDITOR='tee -a' visudo &&
 ######
 
 # Default apps 
