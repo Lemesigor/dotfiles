@@ -6,7 +6,7 @@ alias pip=pip3
 #############################################################
 #
 alias vi=vim
-
+alias cat=bat
 # Hide the name of the computer in the zshrc
 DEFAULT_USER=$(whoami)
 
