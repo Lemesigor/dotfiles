@@ -1,3 +1,5 @@
+###################### Project ################################
+source ~/.zshrc-project-env
 
 ###################### PYTHON ################################
 # Aliases to make python3 and pip3 the dafault
@@ -5,8 +7,10 @@ alias python=python3
 alias pip=pip3
 #############################################################
 #
-alias vi=vim
 alias cat=bat
+# alias vim=nvim
+alias le="exa -l -g --icons"
+alias lvim="~/.local/bin/lvim"
 # Hide the name of the computer in the zshrc
 DEFAULT_USER=$(whoami)
 
@@ -23,14 +27,6 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Setting JAVA_HOME to PATH
 export PATH="$PATH:$JAVA_HOME/bin"
 ##############################################################
-
-#################### POSTGRESS #############################
-# Setting postgress home
-export PSQL_HOME=/Applications/Postgres.app/Contents/Versions/latest
-
-# Setting PSQL_HOME to PATH
-export PATH="$PATH:$PSQL_HOME/bin" 
-############################################################
 
 #                  OHMYZSH CONFIGS
 # If you come from bash you might have to change your $PATH.
@@ -132,3 +128,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Using highlight
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

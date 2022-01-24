@@ -1,0 +1,17 @@
+{"eslint.packageManager": "npm",
+  "eslint.autoFixOnSave": true,
+  "tsserver.npm": "/usr/local/bin/npm",
+  "prettier.tslintIntegration": true,
+  "prettier.eslintIntegration": true,
+  "prettier.disableSuccessMessage": true,
+  "suggest.noselect": false,
+  "snippets.extends": {
+    "typescript": ["javascript"]
+  },
+  "suggest.enablePreselect": false,
+  "coc.preferences.currentFunctionSymbolAutoUpdate": true,
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "graphql", "html", "json", "css", "scss", "dart", "python"],
+    "languageserver": {
+
+    }
+}
