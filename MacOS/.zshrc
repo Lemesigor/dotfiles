@@ -8,9 +8,11 @@ alias pip=pip3
 #############################################################
 #
 alias cat=bat
+export BAT_THEME="Solarized (dark)"
 # alias vim=nvim
 alias le="exa -l -g --icons"
 alias lvim="~/.local/bin/lvim"
+
 # Hide the name of the computer in the zshrc
 DEFAULT_USER=$(whoami)
 
