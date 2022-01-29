@@ -12,9 +12,17 @@ lvim.builtin.lualine.style = "default" -- or "none"
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "nord"
+lvim.colorscheme = "NeoSolarized"
+lvim.transparent_window = false
+
+-- Themes specific configs
+-- solarized
+vim.g.neosolarized_tertmrans=0
+vim.opt.background = "light"
+vim.cmd("colorscheme NeoSolarized")
+-- nord
 vim.g.nord_italic = false
-lvim.transparent_window = true
+
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 -- add your own keymapping
