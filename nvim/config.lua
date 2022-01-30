@@ -13,13 +13,13 @@ lvim.builtin.lualine.style = "default" -- or "none"
 lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "NeoSolarized"
-lvim.transparent_window = false
+lvim.transparent_window = false 
 
 -- Themes specific configs
 -- solarized
 vim.g.neosolarized_tertmrans=0
-vim.opt.background = "light"
-vim.cmd("colorscheme NeoSolarized")
+vim.opt.background = "dark"
+-- vim.cmd("colorscheme NeoSolarized")
 -- nord
 vim.g.nord_italic = false
 
