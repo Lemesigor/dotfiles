@@ -13,7 +13,9 @@ lvim.builtin.lualine.style = "default" -- or "none"
 lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "NeoSolarized"
-lvim.transparent_window = false 
+lvim.transparent_window = false
+-- Set the relative line number
+vim.opt.relativenumber = true
 
 -- Themes specific configs
 -- solarized
