@@ -12,7 +12,7 @@ lvim.builtin.lualine.style = "default" -- or "none"
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "NeoSolarized"
+lvim.colorscheme = "solarized8"
 lvim.transparent_window = false
 -- Set the relative line number
 vim.opt.relativenumber = true
@@ -20,6 +20,7 @@ vim.opt.relativenumber = true
 -- Themes specific configs
 -- solarized
 vim.g.neosolarized_tertmrans=0
+vim.g.solarized_extra_hi_groups=1
 vim.opt.background = "dark"
 -- vim.cmd("colorscheme NeoSolarized")
 -- nord
@@ -155,7 +156,13 @@ lvim.builtin.treesitter.highlight.enabled = true
     {"folke/trouble.nvim",
       cmd = "TroubleToggle",
     },
-}
+    {"lifepillar/vim-solarized8"},
+    {"haishanh/night-owl.vim"},
+    {"morhetz/gruvbox"},
+    {"altercation/vim-colors-solarized"},
+    {"tomasiser/vim-code-dark"},
+    {'dracula/vim', as = 'dracula'}
+ }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- lvim.autocommands.custom_groups = {
