@@ -8,7 +8,7 @@ an executable
 ]]
 -- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
 
-lvim.builtin.lualine.style = "default" -- or "none"
+lvim.builtin.lualine.style = "lvim" -- or "none"
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
