@@ -88,6 +88,10 @@ lvim.builtin.treesitter.ensure_installed = {
   "rust",
   "java",
   "yaml",
+  "dockerfile",
+  "html",
+  "tsx",
+  "json"
 }
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }
@@ -152,16 +156,22 @@ lvim.builtin.treesitter.highlight.enabled = true
 
 -- Additional Plugins
  lvim.plugins = {
-    {"arcticicestudio/nord-vim"},
-    {"folke/trouble.nvim",
-      cmd = "TroubleToggle",
-    },
-    {"lifepillar/vim-solarized8"},
-    {"haishanh/night-owl.vim"},
-    {"morhetz/gruvbox"},
-    {"altercation/vim-colors-solarized"},
-    {"tomasiser/vim-code-dark"},
-    {'dracula/vim', as = 'dracula'}
+  {"arcticicestudio/nord-vim"},
+  {"folke/trouble.nvim",
+    cmd = "TroubleToggle",
+  },
+  {"lifepillar/vim-solarized8"},
+  {"haishanh/night-owl.vim"},
+  {"morhetz/gruvbox"},
+  {"altercation/vim-colors-solarized"},
+  {"tomasiser/vim-code-dark"},
+  {'dracula/vim', as = 'dracula'},
+  {"matsuuu/pinkmare"},
+  {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'},
+  {"https://github.com/ackyshake/Spacegray.vim"},
+  {"https://github.com/sainnhe/sonokai"},
+  {"https://github.com/ayu-theme/ayu-vim"},
+  {"https://github.com/nanotech/jellybeans.vim"}
  }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
