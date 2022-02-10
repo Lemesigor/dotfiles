@@ -163,7 +163,6 @@ lvim.builtin.treesitter.highlight.enabled = true
   {"lifepillar/vim-solarized8"},
   {"haishanh/night-owl.vim"},
   {"morhetz/gruvbox"},
-  {"altercation/vim-colors-solarized"},
   {"tomasiser/vim-code-dark"},
   {'dracula/vim', as = 'dracula'},
   {"matsuuu/pinkmare"},
@@ -171,7 +170,12 @@ lvim.builtin.treesitter.highlight.enabled = true
   {"https://github.com/ackyshake/Spacegray.vim"},
   {"https://github.com/sainnhe/sonokai"},
   {"https://github.com/ayu-theme/ayu-vim"},
-  {"https://github.com/nanotech/jellybeans.vim"}
+  {"https://github.com/nanotech/jellybeans.vim"},
+  {"ray-x/lsp_signature.nvim",
+    config = function() require"lsp_signature".on_attach() end,
+    event = "BufRead"
+  },
+  {"ishan9299/nvim-solarized-lua"}
  }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
