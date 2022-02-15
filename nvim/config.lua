@@ -12,7 +12,7 @@ lvim.builtin.lualine.style = "lvim" -- or "none"
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "solarized8"
+lvim.colorscheme = "nord"
 lvim.transparent_window = false
 -- Set the relative line number
 vim.opt.relativenumber = true
@@ -21,10 +21,15 @@ vim.opt.relativenumber = true
 -- solarized
 vim.g.neosolarized_tertmrans=0
 vim.g.solarized_extra_hi_groups=1
-vim.opt.background = "dark"
+-- vim.opt.background = "dark"
 -- vim.cmd("colorscheme NeoSolarized")
 -- nord
 vim.g.nord_italic = false
+vim.g.nord_bold = false
+vim.g.nord_contrast = true
+-- gruvbox
+vim.g.gruvbox_bold = false
+vim.g.gruvbox_italitc = false
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -33,7 +38,7 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 -- unmap a default keymapping
 -- lvim.keys.normal_mode["<C-Up>"] = false
 -- edit a default keymapping
-lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
+-- lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
 
 -- Change Telescope navigation to use j and k for navigation and n and p for history in both input and normal mode.
 -- we use protected-mode (pcall) just in case the plugin wasn't loaded yet.
@@ -157,6 +162,7 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- Additional Plugins
  lvim.plugins = {
   {"arcticicestudio/nord-vim"},
+  -- {"shaunsingh/nord.nvim"},
   {"folke/trouble.nvim",
     cmd = "TroubleToggle",
   },
@@ -175,7 +181,9 @@ lvim.builtin.treesitter.highlight.enabled = true
     config = function() require"lsp_signature".on_attach() end,
     event = "BufRead"
   },
-  {"ishan9299/nvim-solarized-lua"}
+  {"ishan9299/nvim-solarized-lua"},
+  {"tpope/vim-fugitive"}
+
  }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
