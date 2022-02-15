@@ -38,7 +38,7 @@ export PATH="$PATH:$JAVA_HOME/bin"
 export ZSH="/Users/igorgomeslemes/.oh-my-zsh"
 
 #Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="simple"
 # Use only if theme == robby
 
 # Plugings
