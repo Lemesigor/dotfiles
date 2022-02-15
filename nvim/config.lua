@@ -13,7 +13,7 @@ lvim.builtin.lualine.style = "lvim" -- or "none"
 lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "nord"
-lvim.transparent_window = false
+lvim.transparent_window = true
 -- Set the relative line number
 vim.opt.relativenumber = true
 
