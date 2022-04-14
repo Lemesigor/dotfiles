@@ -10,6 +10,7 @@ alias pip=pip3
 alias cat=bat
 export BAT_THEME="Solarized (dark)"
 alias lvim="~/.local/bin/lvim"
+alias nvim="~/.local/bin/lvim"
 alias v="lvim"
 
 # Hide the name of the computer in the zshrc

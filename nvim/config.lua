@@ -11,7 +11,7 @@ an executable
 lvim.builtin.lualine.style = "lvim" -- or "none"
 -- general
 lvim.log.level = "warn"
-lvim.format_on_save = true
+lvim.format_on_save = false
 lvim.colorscheme = "nord"
 lvim.transparent_window = true
 -- Set the relative line number
