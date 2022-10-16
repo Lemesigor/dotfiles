@@ -74,11 +74,11 @@ lvim.builtin.which_key.mappings["h"] = {"<cmd>split<CR>", "Split horizontal"}
 lvim.builtin.which_key.mappings["v"] = {"<cmd>vsplit<CR>", "Split vertical"}
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
-lvim.builtin.dashboard.active = true
+lvim.builtin.alpha.active = true
 lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
-lvim.builtin.nvimtree.show_icons.git = 0
+-- lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
@@ -162,21 +162,16 @@ formatters.setup {
 -- Additional Plugins
  lvim.plugins = {
   {"arcticicestudio/nord-vim"},
-  -- {"shaunsingh/nord.nvim"},
+  {"shaunsingh/nord.nvim"},
   {"folke/trouble.nvim",
     cmd = "TroubleToggle",
   },
   {"lifepillar/vim-solarized8"},
-  {"haishanh/night-owl.vim"},
   {"morhetz/gruvbox"},
   {"tomasiser/vim-code-dark"},
   {'dracula/vim', as = 'dracula'},
-  {"matsuuu/pinkmare"},
+  -- {"matsuuu/pinkmare"},
   {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'},
-  {"https://github.com/ackyshake/Spacegray.vim"},
-  {"https://github.com/sainnhe/sonokai"},
-  {"https://github.com/ayu-theme/ayu-vim"},
-  {"https://github.com/nanotech/jellybeans.vim"},
   {"ray-x/lsp_signature.nvim",
     config = function() require"lsp_signature".on_attach() end,
     event = "BufRead"
