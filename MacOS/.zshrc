@@ -1,6 +1,3 @@
-###################### Project ################################
-source ~/.zshrc-project-env
-
 ###################### PYTHON ################################
 # Aliases to make python3 and pip3 the dafault
 alias python=python3
@@ -18,13 +15,13 @@ DEFAULT_USER=$(whoami)
 
 ##################### JAVA ###################################
 ## Setting the java_home to java version 8
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+# export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export ANDROID_HOME=~/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-##export JAVA_HOME=$(/usr/libexec/java_home -v 11)
+export JAVA_HOME=$(/usr/libexec/java_home -v 11)
 
 # Setting JAVA_HOME to PATH
 export PATH="$PATH:$JAVA_HOME/bin"
@@ -34,14 +31,14 @@ export PATH="$PATH:$JAVA_HOME/bin"
  export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/igorgomeslemes/.oh-my-zsh"
+export ZSH="/Users/zeuser/.oh-my-zsh"
 
 #Themes
 ZSH_THEME="simple"
 # Use only if theme == robby
 
 # Plugings
-plugins=(git z zsh-autosuggestions)
+plugins=(git z zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -49,4 +46,4 @@ alias ls='exa -l -g --icons'
 zsh="mate ~/.oh-my-zsh"
 
 # Using highlight
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
