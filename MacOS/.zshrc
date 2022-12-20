@@ -1,7 +1,7 @@
 ###################### PYTHON ################################
 # Aliases to make python3 and pip3 the dafault
-alias python=python3
-alias pip=pip3
+# alias python=python3
+# alias pip=pip3
 #############################################################
 #
 alias cat=bat
@@ -10,16 +10,15 @@ alias lvim="~/.local/bin/lvim"
 alias nvim="~/.local/bin/lvim"
 alias v="lvim"
 
+export PATH=$PATH:~/Library/Flutter/flutter/bin
 # Hide the name of the computer in the zshrc
 DEFAULT_USER=$(whoami)
 
 ##################### JAVA ###################################
 ## Setting the java_home to java version 8
 # export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-export ANDROID_HOME=~/Android/Sdk
+export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export JAVA_HOME=$(/usr/libexec/java_home -v 11)
 
@@ -47,3 +46,8 @@ zsh="mate ~/.oh-my-zsh"
 
 # Using highlight
 # source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+eval "$(rbenv init - zsh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
