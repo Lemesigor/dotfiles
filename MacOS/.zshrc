@@ -7,7 +7,7 @@
 alias cat=bat
 export BAT_THEME="Solarized (dark)"
 alias lvim="~/.local/bin/lvim"
-alias nvim="~/.local/bin/lvim"
+# alias nvim="~/.local/bin/lvim"
 alias v="lvim"
 
 export PATH=$PATH:~/Library/Flutter/flutter/bin

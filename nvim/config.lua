@@ -11,7 +11,7 @@ an executable
 lvim.builtin.lualine.style = "lvim" -- or "none"
 -- general
 lvim.log.level = "warn"
-lvim.format_on_save = false
+lvim.format_on_save = true
 lvim.colorscheme = "nord"
 lvim.transparent_window = true
 -- Set the relative line number
@@ -19,8 +19,8 @@ vim.opt.relativenumber = true
 
 -- Themes specific configs
 -- solarized
-vim.g.neosolarized_tertmrans=0
-vim.g.solarized_extra_hi_groups=1
+vim.g.neosolarized_tertmrans = 0
+vim.g.solarized_extra_hi_groups = 1
 -- vim.opt.background = "dark"
 -- vim.cmd("colorscheme NeoSolarized")
 -- nord
@@ -72,12 +72,11 @@ lvim.builtin.which_key.mappings["t"] = {
   w = { "<cmd>Trouble lsp_workspace_diagnostics<cr>", "Diagnostics" },
 }
 
-lvim.builtin.which_key.mappings["h"] = {"<cmd>split<CR>", "Split horizontal"}
-lvim.builtin.which_key.mappings["v"] = {"<cmd>vsplit<CR>", "Split vertical"}
+lvim.builtin.which_key.mappings["h"] = { "<cmd>split<CR>", "Split horizontal" }
+lvim.builtin.which_key.mappings["v"] = { "<cmd>vsplit<CR>", "Split vertical" }
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.alpha.active = true
-lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 -- lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
@@ -130,8 +129,8 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- -- set a formatter, this will override the language server formatting capabilities (if it exists)
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
---   { command = "black", filetypes = { "python" } },
---   { command = "isort", filetypes = { "python" } },
+  --   { command = "black", filetypes = { "python" } },
+  --   { command = "isort", filetypes = { "python" } },
   {
     -- each formatter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
     command = "prettier",
@@ -139,7 +138,7 @@ formatters.setup {
     -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
     -- extra_args = { "--print-with", "100" },
     ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
-    filetypes = { "typescript", "typescriptreact", "javascript","javascriptreact" },
+    filetypes = { "typescript", "typescriptreact", "javascript", "javascriptreact" },
   },
 }
 
@@ -162,26 +161,26 @@ formatters.setup {
 -- }
 
 -- Additional Plugins
- lvim.plugins = {
-  {"arcticicestudio/nord-vim"},
+lvim.plugins = {
+  { "arcticicestudio/nord-vim" },
   -- {"shaunsingh/nord.nvim"},
-  {"folke/trouble.nvim",
+  { "folke/trouble.nvim",
     cmd = "TroubleToggle",
   },
-  {"lifepillar/vim-solarized8"},
-  {"morhetz/gruvbox"},
-  {"tomasiser/vim-code-dark"},
-  {'dracula/vim', as = 'dracula'},
+  { "lifepillar/vim-solarized8" },
+  { "morhetz/gruvbox" },
+  { "tomasiser/vim-code-dark" },
+  { 'dracula/vim', as = 'dracula' },
   -- {"matsuuu/pinkmare"},
-  {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'},
-  {"ray-x/lsp_signature.nvim",
-    config = function() require"lsp_signature".on_attach() end,
+  { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' },
+  { "ray-x/lsp_signature.nvim",
+    config = function() require "lsp_signature".on_attach() end,
     event = "BufRead"
   },
-  {"ishan9299/nvim-solarized-lua"},
-  {"tpope/vim-fugitive"}
+  { "ishan9299/nvim-solarized-lua" },
+  { "tpope/vim-fugitive" }
 
- }
+}
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- lvim.autocommands.custom_groups = {
