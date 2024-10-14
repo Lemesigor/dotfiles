@@ -28,7 +28,9 @@ window:
 
 cursor:
   # Block Underline or Beam
-  style: Block
+  style:
+    shape: Block
+    blinking: Off
 
 
 font:
@@ -38,8 +40,7 @@ font:
   # Font size
   size: 14
 
-  # Better font rendering for mac
-  use_thin_strokes: true
+live_config_reload: true
 
 # Colors (Hyper)
 colors:

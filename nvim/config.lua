@@ -8,14 +8,17 @@ an executable
 ]]
 -- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
 
-lvim.builtin.lualine.style = "lvim" -- or "none"
+-- lvim.builtin.lualine.style = "lvim" -- or "none"
 -- general
 lvim.log.level = "warn"
-lvim.format_on_save = true
+-- lvim.format_on_save = true
+vim.o.termguicolors = true
 lvim.colorscheme = "nord"
-lvim.transparent_window = true
+lvim.transparent_window = false
 -- Set the relative line number
 vim.opt.relativenumber = true
+
+
 
 -- Themes specific configs
 -- solarized
@@ -142,7 +145,7 @@ formatters.setup {
   },
 }
 
--- -- set additional linters
+-- set additional linters
 -- local linters = require "lvim.lsp.null-ls.linters"
 -- linters.setup {
 --   { command = "flake8", filetypes = { "python" } },
@@ -152,33 +155,36 @@ formatters.setup {
 --     ---@usage arguments to pass to the formatter
 --     -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
 --     extra_args = { "--severity", "warning" },
---   },
---   {
---     command = "codespell",
---     ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
---     filetypes = { "javascript", "python" },
---   },
+--   }
+--   -- {
+--   --   command = "codespell",
+--   --   ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
+--   --   filetypes = { "javascript", "python" },
+--   -- },
 -- }
 
 -- Additional Plugins
 lvim.plugins = {
   { "arcticicestudio/nord-vim" },
   -- {"shaunsingh/nord.nvim"},
-  { "folke/trouble.nvim",
+  {
+    "folke/trouble.nvim",
     cmd = "TroubleToggle",
   },
   { "lifepillar/vim-solarized8" },
   { "morhetz/gruvbox" },
   { "tomasiser/vim-code-dark" },
-  { 'dracula/vim', as = 'dracula' },
+  { 'dracula/vim',                  name = 'dracula' },
   -- {"matsuuu/pinkmare"},
   { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' },
-  { "ray-x/lsp_signature.nvim",
+  {
+    "ray-x/lsp_signature.nvim",
     config = function() require "lsp_signature".on_attach() end,
     event = "BufRead"
   },
   { "ishan9299/nvim-solarized-lua" },
-  { "tpope/vim-fugitive" }
+  { "tpope/vim-fugitive" },
+  { "github/copilot.vim" }
 
 }
 

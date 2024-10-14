@@ -1,0 +1,45 @@
+import = [
+  "~/alacritty-theme/themes/nord.toml"
+]
+
+live_config_reload = true
+working_directory = "None"
+
+[env]
+TERM = "alacritty-direct"
+
+[window]
+decorations = "full"
+startup_mode = "Windowed"
+# opacity = 0.99
+
+
+
+  [window.padding]
+  x = 10
+  y = 10
+
+  [window.dimensions]
+  columns = 170
+  lines = 75
+
+[cursor.style]
+shape = "Block"
+blinking = "Off"
+
+[font]
+size = 11
+
+  # [font.normal]
+  # family = "Hack Nerd Font"
+
+
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+save_to_clipboard = true
+
+[shell]
+program = "/bin/zsh"
+args = [ "--login" ]
+
